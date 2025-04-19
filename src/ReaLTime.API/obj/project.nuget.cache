@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qk3dQP+efG8=",
+  "success": true,
+  "projectFilePath": "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.API\\ReaLTime.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\yasar\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\yasar\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
