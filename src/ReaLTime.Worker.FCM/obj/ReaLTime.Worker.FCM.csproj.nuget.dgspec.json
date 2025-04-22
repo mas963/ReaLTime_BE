@@ -4,14 +4,14 @@
     "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Worker.FCM\\ReaLTime.Worker.FCM.csproj": {}
   },
   "projects": {
-    "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Worker.FCM\\ReaLTime.Worker.FCM.csproj": {
+    "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Domain\\ReaLTime.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Worker.FCM\\ReaLTime.Worker.FCM.csproj",
-        "projectName": "ReaLTime.Worker.FCM",
-        "projectPath": "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Worker.FCM\\ReaLTime.Worker.FCM.csproj",
+        "projectUniqueName": "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Domain\\ReaLTime.Domain.csproj",
+        "projectName": "ReaLTime.Domain",
+        "projectPath": "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Domain\\ReaLTime.Domain.csproj",
         "packagesPath": "C:\\Users\\yasar\\.nuget\\packages\\",
-        "outputPath": "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Worker.FCM\\obj\\",
+        "outputPath": "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -53,6 +53,91 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Worker.FCM\\ReaLTime.Worker.FCM.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Worker.FCM\\ReaLTime.Worker.FCM.csproj",
+        "projectName": "ReaLTime.Worker.FCM",
+        "projectPath": "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Worker.FCM\\ReaLTime.Worker.FCM.csproj",
+        "packagesPath": "C:\\Users\\yasar\\.nuget\\packages\\",
+        "outputPath": "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Worker.FCM\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\yasar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Domain\\ReaLTime.Domain.csproj": {
+                "projectPath": "D:\\DOTNET_Projects\\ReaLTime\\src\\ReaLTime.Domain\\ReaLTime.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -16,10 +16,12 @@ public class Notification
     public string Title { get; set; }
 
     public string? Body { get; set; }
+    
+    public Dictionary<string, string>? Data { get; set; }
 
     public string? Link { get; set; }
 
-    public string Icon { get; set; }
+    public string? Icon { get; set; }
 
     public DateTime CreatedAt { get; set; }
 }

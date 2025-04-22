@@ -13,30 +13,10 @@ public class Subscription
     [BsonRepresentation(BsonType.ObjectId)]
     public string CreatorId { get; set; }
 
+    [BsonRepresentation(BsonType.ObjectId)]
     public string DeviceId { get; set; }
-
-    public DeviceType DeviceType { get; set; }
-
-    public string PushToken { get; set; }
-
-    public string BrowserEndpoint { get; set; }
-
-    public string P256dh { get; set; } // for browser
-
-    public string Auth { get; set; } // for browser
-
+    
+    public DateTime SubscribedAt { get; set; }
+    
     public bool IsActive { get; set; } = true;
-
-    public DateTime? LastSuccessfulNotificationAt { get; set; }
-
-    public int FailureCount { get; set; } = 0;
-
-    public DateTime CreatedDate { get; set; }
-}
-
-public enum DeviceType
-{
-    Android,
-    Ios,
-    Browser
 }

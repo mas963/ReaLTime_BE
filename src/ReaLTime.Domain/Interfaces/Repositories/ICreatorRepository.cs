@@ -1,7 +1,7 @@
 using System;
 using ReaLTime.Domain.Entities;
 
-namespace ReaLTime.Domain.Repositories;
+namespace ReaLTime.Domain.Interfaces.Repositories;
 
 public interface ICreatorRepository
 {
