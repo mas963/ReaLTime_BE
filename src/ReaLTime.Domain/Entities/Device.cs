@@ -11,9 +11,9 @@ public class Device
     
     public string DeviceToken { get; set; }
     
-    public NotificationProvider NotificationProvider { get; set; }
+    public string DeviceType { get; set; }
     
-    public DeviceType DeviceType { get; set; }
+    public string NotificationProvider { get; set; }
     
     public DateTime RegisteredAt { get; set; }
     
@@ -29,6 +29,6 @@ public enum DeviceType
 
 public enum NotificationProvider
 {
-    FCM,
+    Fcm,
     OneSignal
 }

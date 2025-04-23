@@ -7,9 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <Folder Include="Features\Devices\Queries\" />
       <Folder Include="Features\Subscriptions\Queries\" />
-      <Folder Include="Notification\Commands\" />
-      <Folder Include="Notification\Queries\" />
     </ItemGroup>
 
     <ItemGroup>
