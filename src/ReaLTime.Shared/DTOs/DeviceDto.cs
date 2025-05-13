@@ -4,4 +4,5 @@ public class DeviceDto
 {
     public string DeviceToken { get; set; }
     public string DeviceType { get; set; }
+    public string NotificationProvider { get; set; }
 }

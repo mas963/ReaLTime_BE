@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReaLTime.Worker.FCM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e024a4fd7533da43f3a165f115f2ac2dd90eb6a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92e2ddf924c19a2d58ec57ae3f22517e2a585f58")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReaLTime.Worker.FCM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReaLTime.Worker.FCM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

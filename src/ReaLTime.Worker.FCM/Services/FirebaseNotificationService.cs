@@ -2,7 +2,7 @@
 using FirebaseAdmin.Messaging;
 using ReaLTime.Domain.Entities;
 using ReaLTime.Domain.Interfaces.Services;
-using Notification = ReaLTime.Domain.Entities.Notification;
+using ReaLTime.Shared.DTOs;
 
 namespace ReaLTime.Worker.FCM.Services;
 
@@ -15,7 +15,7 @@ public class FirebaseNotificationService : INotificationService
         _firebaseApp = firebaseApp;
     }
     
-    public async Task<bool> SendNotificationAsync(Notification notification, Subscription subscription)
+    public async Task<bool> SendNotificationAsync(NotificationDto notificationDto, DeviceDto deviceDto)
     {
         try
         {
@@ -23,13 +23,13 @@ public class FirebaseNotificationService : INotificationService
 
             var notificationMessage = new Message
             {
-                Token = subscription.DeviceToken,
+                Token = deviceDto.DeviceToken,
                 Notification = new FirebaseAdmin.Messaging.Notification
                 {
-                    Title = notification.Title,
-                    Body = notification.Body,
+                    Title = notificationDto.Title,
+                    Body = notificationDto.Body,
                 },
-                Data = notification.Data
+                Data = notificationDto.Data
             };
 
             var result = await messaging.SendAsync(notificationMessage);
@@ -41,12 +41,7 @@ public class FirebaseNotificationService : INotificationService
             return false; 
         }
     }
-
-    public Task<bool> CanHandleDeviceType(DeviceType deviceType)
-    {
-        return Task.FromResult(deviceType == DeviceType.Android || deviceType == DeviceType.Ios);
-    }
-
+    
     public string GetProviderName()
     {
         return "FCM";

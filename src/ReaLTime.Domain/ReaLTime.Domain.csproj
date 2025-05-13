@@ -10,4 +10,8 @@
       <PackageReference Include="MongoDB.Bson" Version="3.3.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\ReaLTime.Shared\ReaLTime.Shared.csproj" />
+    </ItemGroup>
+
 </Project>

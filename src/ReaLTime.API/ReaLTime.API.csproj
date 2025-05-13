@@ -8,12 +8,18 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+        <PackageReference Include="Scalar.AspNetCore" Version="2.2.7" />
+        <PackageReference Include="WolverineFx" Version="3.13.2" />
+        <PackageReference Include="WolverineFx.RabbitMQ" Version="3.13.2" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
       <Folder Include="Extensions\" />
       <Folder Include="Middlewares\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ReaLTime.Application\ReaLTime.Application.csproj" />
     </ItemGroup>
 
 </Project>

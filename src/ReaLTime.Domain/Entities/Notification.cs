@@ -24,6 +24,16 @@ public class Notification
     public string? Icon { get; set; }
 
     public DateTime CreatedAt { get; set; }
+
+    public NotificationStatus Status { get; set; }
 }
 
+
+public enum NotificationStatus
+{
+    Created,
+    Processing,
+    Delivered,
+    Failed
+}
 

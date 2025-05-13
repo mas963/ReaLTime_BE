@@ -14,6 +14,8 @@ public class Device
     public string DeviceType { get; set; }
     
     public string NotificationProvider { get; set; }
+
+    public int ErrorCount { get; set; } = 0;
     
     public DateTime RegisteredAt { get; set; }
     

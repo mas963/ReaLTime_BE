@@ -1,10 +1,10 @@
-﻿using ReaLTime.Domain.Entities;
+﻿using ReaLTime.Shared.DTOs;
 
 namespace ReaLTime.Domain.Interfaces.Services;
 
 public interface INotificationService
 {
-    Task <bool> SendNotificationAsync(Notification notification, Subscription subscription);
-    Task <bool> CanHandleDeviceType(DeviceType deviceType);
+    Task <bool> SendNotificationAsync(NotificationDto notificationDto, DeviceDto deviceDto);
+    // Task <bool> CanHandleDeviceType(DeviceType deviceType);
     string GetProviderName();
 }

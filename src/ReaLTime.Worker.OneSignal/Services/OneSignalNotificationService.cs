@@ -18,14 +18,14 @@ public class OneSignalNotificationService : INotificationService
         _apiKey = apiKey;
     }
     
-    public async Task<bool> SendNotificationAsync(Notification notification, Subscription subscription)
+    public async Task<bool> SendNotificationAsync(Notification notification, Device device)
     {
         try
         {
             var payload = new
             {
                 app_id = _appId,
-                include_player_ids = new[] { subscription.DeviceToken },
+                include_player_ids = new[] { device.DeviceToken },
                 headings = new { en = notification.Title },
                 contents = new { en = notification.Body },
                 data = notification.Data,

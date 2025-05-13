@@ -2105,7 +2105,7 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "WolverineFx/3.12.2": {
+      "WolverineFx/3.13.2": {
         "type": "package",
         "dependencies": {
           "FastExpressionCompiler": "4.2.2",
@@ -2139,11 +2139,11 @@
           }
         }
       },
-      "WolverineFx.RabbitMQ/3.12.2": {
+      "WolverineFx.RabbitMQ/3.13.2": {
         "type": "package",
         "dependencies": {
           "RabbitMQ.Client": "7.0.0",
-          "WolverineFx": "3.12.2"
+          "WolverineFx": "3.13.2"
         },
         "compile": {
           "lib/net9.0/Wolverine.RabbitMQ.dll": {
@@ -2169,13 +2169,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "MongoDB.Bson": "3.3.0"
+          "MongoDB.Bson": "3.3.0",
+          "ReaLTime.Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ReaLTime.Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/ReaLTime.Domain.dll": {}
+        }
+      },
+      "ReaLTime.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ReaLTime.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ReaLTime.Shared.dll": {}
         }
       }
     }
@@ -6598,10 +6609,10 @@
         "version.txt"
       ]
     },
-    "WolverineFx/3.12.2": {
-      "sha512": "XLRr8Mmab13oAUZxdClexiYceWOghI7YguaePm7KAyHYi8wFGbX2lh9fKR55JsqzpUClGGcZrG5ad+m6yFpGZg==",
+    "WolverineFx/3.13.2": {
+      "sha512": "vfJzHUiKf3yjQdWU+EwSWK4JsY6I4tD7e4/ZtfbbP0/gNBiXvi8NqRVMrEj7N47g71b84Xvup4pyHfwMfcN9cg==",
       "type": "package",
-      "path": "wolverinefx/3.12.2",
+      "path": "wolverinefx/3.13.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6611,14 +6622,14 @@
         "lib/net8.0/Wolverine.xml",
         "lib/net9.0/Wolverine.dll",
         "lib/net9.0/Wolverine.xml",
-        "wolverinefx.3.12.2.nupkg.sha512",
+        "wolverinefx.3.13.2.nupkg.sha512",
         "wolverinefx.nuspec"
       ]
     },
-    "WolverineFx.RabbitMQ/3.12.2": {
-      "sha512": "1Z44zK89DUcF+aaMT9FsEY01qj/b+BpYEu0SujzUUgO52RAh40qXDCKV60EwSVUts1xz5Ev+kXs5S+GS+mHunA==",
+    "WolverineFx.RabbitMQ/3.13.2": {
+      "sha512": "uLOHhomvKiZuhc4b3/ieHEq2XF+oheNPHTGSTrLlp++xUomKw5NunmLKVYqX3tuRZfSOyPCiRY7SSMyfMKnMfA==",
       "type": "package",
-      "path": "wolverinefx.rabbitmq/3.12.2",
+      "path": "wolverinefx.rabbitmq/3.13.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6628,7 +6639,7 @@
         "lib/net8.0/Wolverine.RabbitMQ.xml",
         "lib/net9.0/Wolverine.RabbitMQ.dll",
         "lib/net9.0/Wolverine.RabbitMQ.xml",
-        "wolverinefx.rabbitmq.3.12.2.nupkg.sha512",
+        "wolverinefx.rabbitmq.3.13.2.nupkg.sha512",
         "wolverinefx.rabbitmq.nuspec"
       ]
     },
@@ -6654,6 +6665,11 @@
       "type": "project",
       "path": "../ReaLTime.Domain/ReaLTime.Domain.csproj",
       "msbuildProject": "../ReaLTime.Domain/ReaLTime.Domain.csproj"
+    },
+    "ReaLTime.Shared/1.0.0": {
+      "type": "project",
+      "path": "../ReaLTime.Shared/ReaLTime.Shared.csproj",
+      "msbuildProject": "../ReaLTime.Shared/ReaLTime.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6661,7 +6677,7 @@
       "Microsoft.Extensions.Options >= 9.0.4",
       "MongoDB.Driver >= 3.3.0",
       "ReaLTime.Domain >= 1.0.0",
-      "WolverineFx.RabbitMQ >= 3.12.2"
+      "WolverineFx.RabbitMQ >= 3.13.2"
     ]
   },
   "packageFolders": {
@@ -6715,9 +6731,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net9.0": {
@@ -6733,7 +6749,7 @@
           },
           "WolverineFx.RabbitMQ": {
             "target": "Package",
-            "version": "[3.12.2, )"
+            "version": "[3.13.2, )"
           }
         },
         "imports": [
@@ -6752,7 +6768,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
